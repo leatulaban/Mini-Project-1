@@ -1,42 +1,43 @@
 body {
-    background-image: url("1.jpg"); 
-    /* height: 100vh;  */
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-} 
-
-#homepage{
-    padding-bottom: 230px;
+  background-image: url('1.jpg');
+  /* height: 100vh;  */
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-#photobooth{
-    background-image: url("5.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+#homepage {
+  padding-bottom: 230px;
+}
+
+#photobooth {
+  background-image: url('5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .container {
-    margin-top: 250px;
-  }
-
-#btns{
-    margin-top: 80px;
-    margin-left: 300px !important;
-    padding: 10px !important;
-    justify-content: space-around;
-    gap: 100px;
+  margin-top: 250px;
 }
 
-#photobooth{
+#btns {
+  margin-top: 80px;
+  /* margin-left: 300px !important; */
+  padding: 10px !important;
+  justify-content: space-around;
+  gap: 100px;
+  display: flex !important;
+}
+
+#photobooth {
   margin-top: 100px;
-    padding-bottom: 100px;
-    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px));
+  padding-bottom: 100px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
 }
 
-h4{
-    letter-spacing: 0.1em;
+h4 {
+  letter-spacing: 0.1em;
 }
-#btn1{
-    background: #ffffff9f;
+#btn1 {
+  background: #ffffff9f;
   color: #020202;
   border-color: #201f1f00;
   font-size: 15px;
@@ -47,7 +48,7 @@ h4{
 
 #btn1:hover,
 #btn1:focus,
-#btn1:active{
+#btn1:active {
   background-color: #fffcfc00;
   color: #0a0a0a;
   border-color: #000000;
@@ -56,21 +57,50 @@ h4{
   letter-spacing: 0.1em;
 }
 
-
-.display-3{
+.display-3 {
   margin-top: 50px;
 }
 
-#get{
-  background-image: url("6.jpg");
-    clip-path: polygon(0 0,100% 50px,100% 100%,0 100%);
-
+#get {
+  background-image: url('6.jpg');
+  clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
 }
 
-#sinage{
+#sinage {
   margin-bottom: 300px;
 }
 
-#con{
+#con {
   margin-bottom: 100px;
+}
+@media (max-width: 990px) {
+  .navbar-class {
+    background-color: #d27780 !important;
+  }
+  #homepage {
+    padding-bottom: 0px !important;
+  }
+  .home-container {
+    margin-top: 0px !important;
+    padding-top: 50px !important;
+  }
+
+  .home-container > .row > h4 {
+    margin-left: 0px !important;
+  }
+  #btns,
+  .container,
+  #photobooth,
+  .display-3 {
+    margin-top: 0px !important;
+  }
+
+  #sinage,
+  #con {
+    margin-bottom: 0px !important;
+  }
+
+  #btns {
+    padding: 0px !important;
+  }
 }
